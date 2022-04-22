@@ -4,6 +4,23 @@ A website to plan your projects effortlessly! This project planner lets you mana
 
 Website link - https://projectplanner123.000webhostapp.com/
 
+
+
+## DEPLOY THE APPLICATION ON EC2 WITH FEW EASY STEPS
+
+- Go to aws management console 
+- In services, choose Instances and then launch an instance 
+- Choose AMI: Microsoft Windows Server 2022 Base (in Free Tier)
+- Instance Type: t2.micro
+- No change in Instance Details.
+- No change is Storage. Assigned storage is sufficient.
+- Add a tag: No change 
+- Security Group Configuration: Add Rules: Custom TCP protocol and set port number to 8080. Add HTTP and HTTPS rules as well.	
+- When asked for Key Pair, select Create a new Key Pair. Name the Key Pair and create. A .pem file will be downloaded. Know the location of this file for further use.
+- Launch the instance
+- Go to EC2>>Instances and wait for the Instance State to display Running and Status Check to display 2/2 checks passed before proceeding.
+
+
 ## SCREENSHOTS
 
 1) To do lists= tab
